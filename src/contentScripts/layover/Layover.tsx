@@ -1,4 +1,7 @@
+// src/contentScripts/layover/Layover.tsx
+
 import React, { useCallback, useContext } from 'react';
+import { tw } from 'twind';
 import { TabStore } from '../../background/types/Store.types';
 import {
   HIGHLIGHT,
@@ -7,7 +10,7 @@ import {
   UPDATED_STORE,
   UPDATE_HIGHLIGHTS,
 } from '../../background/types/message.types';
-import '../../tailwind.css';
+// import '../../tailwind.css';
 import { LayoverContext } from '../contexts/LayoverContext';
 import { TabStateContext } from '../contexts/TabStateContext';
 import useActiveTabChange from '../hooks/useActiveTabChange';
@@ -150,7 +153,8 @@ function Layover() {
       {' '}
       {showLayover && (
         <div id="ctrl-f-plus-extension">
-          <div className="ctrl-fixed ctrl-left-5 ctrl-top-10 ctrl-z-[9999] ctrl-w-screen">
+          {/* <div className="ctrl-fixed ctrl-left-5 ctrl-top-10 ctrl-z-[9999] ctrl-w-screen"> */}
+          <div className={tw`fixed left-5 top-10 z-[9999] w-screen`}>
             {' '}
             <DraggableContainer>
               <SearchInput focus={showLayover} />

@@ -94,6 +94,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-draggable": "^4.4.5",
+    "twind": "^0.16.19",
     "webpack-merge": "^5.9.0"
   },
   "husky": {
