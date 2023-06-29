@@ -30,5 +30,8 @@
       "js": ["layover.js", "contentStyles.js"],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "options_page": "options.html"
 }
+
+https://www.wpeform.io/blog/render-react-app-shadow-dom-styled-components/
